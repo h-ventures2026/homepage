@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#0d0d1a">
+<meta name="description" content="H Ventures is a Seoul-based venture capital firm backing founders with deep technical moats in AI, semiconductors, quantum computing, and biohealthcare.">
+
+<link rel="canonical" href="https://hventures.co.kr/">
+<link rel="alternate" hreflang="en" href="https://hventures.co.kr/">
+<link rel="alternate" hreflang="ko" href="https://hventures.co.kr/ko.html">
+<link rel="alternate" hreflang="x-default" href="https://hventures.co.kr/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="H Ventures — Patient capital, walking together.">
+<meta property="og:description" content="A Seoul-based venture capital firm backing founders with deep technical moats in AI, semiconductors, quantum computing, and biohealthcare.">
+<meta property="og:url" content="https://h-ventures-1.vercel.app/">
+<meta property="og:site_name" content="H Ventures">
+<meta property="og:image" content="https://h-ventures-1.vercel.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="ko_KR">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="H Ventures — Patient capital, walking together.">
+<meta name="twitter:description" content="A Seoul-based venture capital firm backing founders with deep technical moats.">
+<meta name="twitter:image" content="https://h-ventures-1.vercel.app/og-image.png">
+
+<title>H Ventures — Patient capital, walking together.</title>
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='46' fill='%23f5f2ec' stroke='%230a0a0a' stroke-width='4'/%3E%3Ctext x='50' y='68' text-anchor='middle' font-family='Georgia,serif' font-size='54' font-style='italic' font-weight='400' fill='%230a0a0a'%3EH%3C/text%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "H Ventures",
+  "alternateName": "에이치벤처스",
+  "legalName": "H Ventures, LLC",
+  "url": "https://hventures.co.kr",
+  "logo": "https://hventures.co.kr/logo.png",
+  "foundingDate": "2026-02-05",
+  "description": "A Seoul-based venture capital firm backing founders with deep technical moats in AI, semiconductors, quantum computing, and biohealthcare.",
+  "slogan": "Patient capital, walking together.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "503 Teheran-ro, 10F",
+    "addressLocality": "Gangnam-gu",
+    "addressRegion": "Seoul",
+    "addressCountry": "KR"
+  },
+  "email": "info@hventures.co.kr"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,200..700;1,9..144,200..700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css">
+<link rel="stylesheet" href="styles.css">
+<script>if(!sessionStorage.getItem('lang-choice')&&navigator.language.startsWith('ko'))location.replace('ko.html');</script>
+</head>
+<body>
+
+<div class="progress" id="progress"></div>
+
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">H</span>
+      <span>H Ventures</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#founders">Team</a></li>
+      <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#approach">Strategies</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <div class="nav-right">
+      <a href="ko.html" class="lang-toggle" hreflang="ko">KOR</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <ul>
+    <li><a href="#about"><span class="num">01</span>About</a></li>
+    <li><a href="#founders"><span class="num">02</span>Team</a></li>
+    <li><a href="#philosophy"><span class="num">03</span>Philosophy</a></li>
+    <li><a href="#approach"><span class="num">04</span>Strategies</a></li>
+    <li><a href="#portfolio"><span class="num">05</span>Portfolio</a></li>
+    <li><a href="#contact"><span class="num">06</span>Contact Us</a></li>
+    <li><a href="ko.html"><span class="num">→</span>한국어</a></li>
+  </ul>
+  <div class="mobile-menu-foot">
+    <span>H Ventures · Est. 2026</span>
+    <span>Seoul</span>
+  </div>
+</div>
+
+<section class="hero">
+  <div>
+    <div class="hero-top">
+      <div class="hero-eyebrow reveal">H Ventures · Est. 2026</div>
+    </div>
+  </div>
+  <h1 class="hero-headline reveal">
+    <span class="block">Patient <span class="italic accent">capital,</span></span>
+    <span class="block">walking <span class="italic">together.</span></span>
+  </h1>
+  <div class="hero-bottom">
+    <p class="hero-desc reveal" style="--d:0.1s;">
+      H Ventures is a new venture firm, <strong>built by people who speak both technology and business fluently.</strong> We back founders with deep technical moats, and stay beside them for the long arc.
+    </p>
+    <div class="hero-meta reveal" style="--d:0.2s;">
+      <span class="label">Focus</span>
+      <span class="value">AI · Semiconductor<br>Quantum · Bio</span>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div>
+        <div class="section-label reveal"><span class="num">01</span>About</div>
+        <h2 class="about-title reveal">
+          Built by people<br>who speak <span class="it">technology.</span>
+        </h2>
+      </div>
+      <div class="about-body reveal" style="--d:0.15s;">
+        <p class="lead">
+          H Ventures is a Seoul-based venture capital firm, built by founders who have spent their careers at the frontier of technology — in semiconductors, artificial intelligence, intellectual property, and biohealthcare.
+        </p>
+        <p>
+          Founded in February 2026, we invest from early stage through Pre-IPO, staying beside our portfolio companies for the long arc — not just the first check. We back founders with deep technical moats, and aim to be the first call they make.
+        </p>
+      </div>
+    </div>
+    <div class="who-serve">
+      <div class="who-label reveal">Who we serve</div>
+      <div class="who-cards">
+        <div class="who-card reveal">
+          <div class="who-ord">1st</div>
+          <div class="who-title">Institutional Investors</div>
+        </div>
+        <div class="who-card reveal" style="--d:0.08s;">
+          <div class="who-ord">2nd</div>
+          <div class="who-title">Wealth Professionals</div>
+        </div>
+        <div class="who-card reveal" style="--d:0.16s;">
+          <div class="who-ord">3rd</div>
+          <div class="who-title">Startup Founders &amp; CEOs</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="founders" id="founders">
+  <div class="container">
+    <div class="founders-intro">
+      <div>
+        <div class="section-label reveal"><span class="num">02</span>Team</div>
+        <h2 class="reveal">
+          A new firm,<br>
+          built on <span class="it">long journeys.</span>
+        </h2>
+      </div>
+      <p class="reveal" style="--d:0.15s;">
+        Four founders, each having reached the top of their own discipline — semiconductor physics at MIT and Samsung, AI and biotech IP at Korea's leading firms, venture investing across a decade of exits. Gathered at one table now, with one shared conviction: that technology is worth backing only when one truly understands it.
+      </p>
+    </div>
+
+    <article class="founder-card founder-featured reveal">
+      <div class="founder-head">
+        <div class="founder-idx">F01</div>
+        <h3 class="founder-name">Hunmo <span class="it">Kang</span></h3>
+        <div class="founder-role">Founder · CEO</div>
+      </div>
+      <div class="founder-body">
+        <div class="founder-story">
+          <div class="founder-featured-photo">
+            <img src="hunmo_kang.jpeg" alt="Hunmo Kang — Founder &amp; CEO, H Ventures">
+          </div>
+          <p class="founder-tagline">
+            The person who was <em>first</em> to carve a path between technology and capital in Korean venture history.
+          </p>
+          <p>
+            Widely known as <strong>Korea's first patent-attorney venture capitalist</strong>. Hunmo Kang earned his patent attorney license while still an undergraduate at Seoul National University's Electrical Engineering department — a rare combination of an engineer's grasp of technology and a lawyer's instinct for structuring rights.
+          </p>
+          <p>
+            In 2013 he joined ID Ventures as the first patent attorney to serve as an investment principal in Korean VC history, pioneering IP-based investing in Korea. In 2018 he co-founded Hana Ventures as a founding member and registered director, serving as Chief Investment Officer and leading flagship funds including the Hana Digital Transformation Fund (Korea Growth Investment Corp.), Hana Innovation Venture Scale-up Fund (Korea Fund of Funds), Hana K-New Deal Unicorn Fund (Korea Development Bank), and Hana Transcending Frontier Fund of Funds.
+          </p>
+          <p>
+            From technology- and IP-driven investing to consumer goods and cosmetics, from early-stage rounds to listed-company mezzanine — <strong>he has been the rare all-round investor who covers every chapter of a company's life.</strong> The companies he has walked with span a generation of Korean technology: KOSPI listings such as <em>Krafton</em> and <em>Shift Up</em>; the KOSDAQ track of <em>Nara Space Technology, Curocell, Cellbion, EnCell, New Kids On, OSP,</em> and <em>Bonne</em>; landmark global strategic exits including <em>Royal Crow (acquired by Tencent)</em> and <em>Red Sahara Studio (acquired by Krafton)</em>; and high-conviction names still in motion — <em>Lablup, The-AIO, Exocobio, Brightonix Imaging, Zigbang, Wadiz, FastFive, Laundrygo, Flow, TeamBlind,</em> and <em>Sirloin.</em> In biohealthcare, <em>Nexa I</em> — a novel anti-cancer therapeutics company — stands as a representative long-term companionship.
+          </p>
+          <p>
+            He also served as Adjunct Professor at Korea University's Graduate School of Technology Management. In February 2026, he founded H Ventures to build a firm run end-to-end on a single coherent philosophy: patient capital, walking together.
+          </p>
+        </div>
+        <div class="cv">
+          <div class="cv-block">
+            <h5>Education</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2002–2008</span>
+                <span class="desc"><strong>Seoul National University</strong><span class="sub">B.S., Electrical Engineering</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">1999–2002</span>
+                <span class="desc"><strong>Uijeongbu High School</strong></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cv-block">
+            <h5>License</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2007</span>
+                <span class="desc"><strong>Korean Patent Attorney</strong><span class="sub">Korea Intellectual Property Office</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cv-block">
+            <h5>Experience</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2026–</span>
+                <span class="desc"><strong>H Ventures</strong><span class="sub">Founder · CEO</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2018–2025</span>
+                <span class="desc"><strong>Hana Ventures</strong><span class="sub">Co-founder · CIO · Managing Director</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2023–2025</span>
+                <span class="desc"><strong>Korea University</strong><span class="sub">Adjunct Professor, Graduate School of Technology Management</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2013–2018</span>
+                <span class="desc"><strong>ID Ventures</strong><span class="sub">Senior Principal — First patent-attorney VC in Korea</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2011–2013</span>
+                <span class="desc"><strong>KCL Law Firm</strong><span class="sub">Patent Attorney — IP prosecution, litigation, consulting</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2008–2011</span>
+                <span class="desc"><strong>Webcash</strong><span class="sub">Patent Attorney — Fintech, product development & planning</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="founder-card founder-featured reveal">
+      <div class="founder-head">
+        <div class="founder-idx">F02</div>
+        <h3 class="founder-name">Donghyun <span class="it">Jin</span></h3>
+        <div class="founder-role">Founder · Managing Partner</div>
+      </div>
+      <div class="founder-body">
+        <div class="founder-story">
+          <div class="founder-featured-photo">
+            <img src="donghyun_jin.jpeg" alt="Donghyun Jin — Founder &amp; Managing Partner, H Ventures">
+          </div>
+          <p class="founder-tagline">
+            From silicon to software — a rare <em>vertical view</em> of the entire technology stack.
+          </p>
+          <p>
+            Valedictorian of Seoul National University's College of Engineering and Ph.D. in Electrical Engineering and Computer Science from MIT. One of the few engineers in Korea who can reason fluently from semiconductor device physics all the way up to AI software.
+          </p>
+          <p>
+            At Samsung Foundry, he led the development and launch of the world's first Gate-All-Around 3nm foundry logic product (Multi-Bridge-Channel FET), and managed technology validation and customer acquisition for global clients. Earlier at Analog Devices in the US, he co-developed next-generation GaN power semiconductor technology with TSMC.
+          </p>
+          <p>
+            Most recently as CTO of Alsemy, he built out an AI-based semiconductor modeling and circuit simulation platform for SK hynix, Samsung, and LG Display. A disciplined long-term investor in US big tech with returns compounding at roughly 30% CAGR across positions in NVIDIA, AMD, Tesla, Palantir, Lam Research, and Micron.
+          </p>
+        </div>
+        <div class="cv">
+          <div class="cv-block">
+            <h5>Education</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2010–2014</span>
+                <span class="desc"><strong>Massachusetts Institute of Technology</strong><span class="sub">Ph.D., Electrical Engineering & Computer Science</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2008–2010</span>
+                <span class="desc"><strong>Massachusetts Institute of Technology</strong><span class="sub">M.S., Electrical Engineering & Computer Science</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2002–2008</span>
+                <span class="desc"><strong>Seoul National University</strong><span class="sub">B.S., Electrical Engineering — Valedictorian, College of Engineering</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">1999–2002</span>
+                <span class="desc"><strong>Seoul Science High School</strong></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cv-block">
+            <h5>Experience</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2026–</span>
+                <span class="desc"><strong>H Ventures</strong><span class="sub">Founder · Managing Partner</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2023–2025</span>
+                <span class="desc"><strong>Alsemy</strong><span class="sub">CTO — AI-based semiconductor modeling & circuit simulation (Alsphere, Alsis, Alscope)</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2020–2023</span>
+                <span class="desc"><strong>Samsung Electronics, Foundry</strong><span class="sub">Principal Engineer — World's first 3nm GAA logic (MBCFET)</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2014–2018</span>
+                <span class="desc"><strong>Analog Devices, Inc. (USA)</strong><span class="sub">Senior Design Engineer — Next-gen GaN power technology with TSMC</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="founder-card reveal">
+      <div class="founder-head">
+        <div class="founder-idx">F03</div>
+        <h3 class="founder-name">Jongwoo <span class="it">Ryu</span></h3>
+        <div class="founder-role">Founder · Partner</div>
+      </div>
+      <div class="founder-body">
+        <div class="founder-story">
+          <p class="founder-tagline">
+            A drug's fate is decided long before the clinic — <em>in its IP strategy.</em>
+          </p>
+          <p>
+            Managing Partner of Sunjung Patent & Law Firm and one of Korea's most experienced biotech IP strategists, with a microbiology background from Seoul National University and over a decade of work on the patent architecture of novel drugs.
+          </p>
+          <p>
+            Engaged — both in IP design and early investment — with more than twenty biotechs, including GI Innovation (KOSDAQ-listed), Kanaph Therapeutics (KOSDAQ-listed in 2026), EpiD Biotherapeutics (acquired by Genexine), Wellmarker Bio, GI Cell, Phion Biotech, and others. Extensive License-Out experience spanning Genexine / NeoImmuneTech (IL-7), GI Innovation (GI-101 / GI-301 antibody technologies), Kanaph Therapeutics, and Hanmi Pharmaceutical compounds.
+          </p>
+          <p>
+            Evaluation committee member at the Korea Drug Development Fund (KDDF) since 2023.
+          </p>
+        </div>
+        <div class="cv">
+          <div class="cv-block">
+            <h5>Education</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2003–2005</span>
+                <span class="desc"><strong>Seoul National University</strong><span class="sub">M.S., Microbiology</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">1996–2000</span>
+                <span class="desc"><strong>Seoul National University</strong><span class="sub">B.S., Microbiology</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cv-block">
+            <h5>License & Appointments</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2007</span>
+                <span class="desc"><strong>Korean Patent Attorney</strong></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2010</span>
+                <span class="desc"><strong>Business & Technology Valuation Specialist</strong></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2023–</span>
+                <span class="desc"><strong>KDDF Evaluation Committee</strong><span class="sub">Korea Drug Development Fund</span></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cv-block">
+            <h5>Experience</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2026–</span>
+                <span class="desc"><strong>H Ventures</strong><span class="sub">Founder · Partner</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2020–</span>
+                <span class="desc"><strong>Sunjung Patent & Law Firm</strong><span class="sub">Managing Partner</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2014–2020</span>
+                <span class="desc"><strong>Jeil Patent & Law Firm</strong><span class="sub">Partner Attorney</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2011–2014</span>
+                <span class="desc"><strong>Lee & Mock Patent Firm</strong><span class="sub">Attorney</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2008–2010</span>
+                <span class="desc"><strong>One International Patent & Law</strong><span class="sub">Attorney</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="founder-card reveal">
+      <div class="founder-head">
+        <div class="founder-idx">F04</div>
+        <h3 class="founder-name">Daeho <span class="it">Lee</span></h3>
+        <div class="founder-role">Founder · Partner</div>
+      </div>
+      <div class="founder-body">
+        <div class="founder-story">
+          <p class="founder-tagline">
+            The valuation of an AI startup is designed <em>the moment its first patent is written.</em>
+          </p>
+          <p>
+            Managing Partner of PI IP LAW, widely regarded as Korea's premier AI patent practice. Named IAM Patent 300 Global Leader (2025), and consistently recommended across IAM Patent 1000 (Individual Prosecution, 2022–2025), Managing IP Stars Trademark Star, WTR 1000, and The Legal 500 Recommended Lawyer.
+          </p>
+          <p>
+            Standing Director of the Korea Artificial Intelligence Association since 2020, giving him a rare vantage point over the patent landscape of the AI industry — in Korea and globally. Has shaped the IP portfolios of category-defining AI companies including Sualab (acquired by Cognex), VUNO (KOSDAQ-listed), Nota (KOSDAQ-listed), MakinaRocks (2026 KOSDAQ listing in progress), Twelve Labs, Bespin Global, Kakao Games, and Xiaomi.
+          </p>
+          <p>
+            Operates PI IP LAW's proprietary IP Scale Up Program, purpose-built for AI startups preparing for technology-based special listings.
+          </p>
+        </div>
+        <div class="cv">
+          <div class="cv-block">
+            <h5>Education</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2000–2008</span>
+                <span class="desc"><strong>Yonsei University</strong><span class="sub">B.S., Electrical & Electronic Engineering</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">1997–2000</span>
+                <span class="desc"><strong>Daeil Foreign Language High School</strong></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cv-block">
+            <h5>License & Recognition</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2007</span>
+                <span class="desc"><strong>Korean Patent Attorney</strong></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2020–</span>
+                <span class="desc"><strong>Korea AI Association</strong><span class="sub">Standing Director</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2025</span>
+                <span class="desc"><strong>IAM Patent 300 Global Leaders</strong></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2022–2025</span>
+                <span class="desc"><strong>IAM Patent 1000</strong><span class="sub">Individual Prosecution</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2022–2025</span>
+                <span class="desc"><strong>Managing IP Stars · WTR 1000 · The Legal 500</strong></span>
+              </li>
+            </ul>
+          </div>
+          <div class="cv-block">
+            <h5>Experience</h5>
+            <ul class="cv-list">
+              <li class="cv-item">
+                <span class="year">2026–</span>
+                <span class="desc"><strong>H Ventures</strong><span class="sub">Founder · Partner</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2013–</span>
+                <span class="desc"><strong>PI IP LAW</strong><span class="sub">Managing Partner</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2013</span>
+                <span class="desc"><strong>Duriam Patent & Law</strong><span class="sub">Partner Attorney</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2009–2013</span>
+                <span class="desc"><strong>Nam & Nam International Patent Firm</strong><span class="sub">Attorney</span></span>
+              </li>
+              <li class="cv-item">
+                <span class="year">2008–2009</span>
+                <span class="desc"><strong>Park Jang-won Patent & Law</strong><span class="sub">Attorney</span></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="philosophy" id="philosophy">
+  <div class="container">
+    <div class="phil-grid">
+      <div>
+        <div class="section-label reveal"><span class="num">03</span>Philosophy</div>
+        <h2 class="phil-title reveal">
+          Technology is<br>
+          <span class="it hl">rewriting</span><br>
+          the world.
+        </h2>
+      </div>
+      <div class="phil-body reveal" style="--d:0.15s;">
+        <p class="lead">
+          AI is rewriting the grammar of every industry. In this transition, capital alone is no longer enough — the best investors must first be fluent in the technology itself.
+        </p>
+        <p>
+          H Ventures was founded by four partners: Korea's first patent-attorney venture capitalist, an MIT Ph.D. who helped launch the world's first 3nm Gate-All-Around logic, and two of the country's most recognized intellectual-property strategists in AI and biotech. We are not passive capital providers — we debate technology in the founder's own language, design patent portfolios alongside them, and help shape the company that will emerge from it.
+        </p>
+        <p>
+          Our commitment is simple: we look at people before numbers, ask about fundamentals before trends, and build companies that will still matter in a decade. For founders with real technical moats, we aim to be the first call — and the last one standing.
+        </p>
+        <div class="phil-quote">
+          <em>Patient capital, walking together.</em>
+          <span class="phil-quote-attr">H Ventures · Investment Principle</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="thesis" id="thesis">
+  <div class="container">
+    <div class="section-label reveal"><span class="num">04</span>Investment Thesis</div>
+    <h2 class="thesis-head reveal">
+      Four frontiers.<br>
+      We focus where <span class="it">technology</span><br>
+      reshapes the world itself.
+    </h2>
+    <div class="thesis-grid">
+      <div class="thesis-card reveal">
+        <div class="thesis-num">01 / Intelligence</div>
+        <h3 class="thesis-name">Artificial <span class="it">Intelligence</span></h3>
+        <p class="thesis-desc">
+          General-purpose AI is restructuring software, industry, and scientific research itself. We seek AI-native teams with deep domain insight and asymmetric advantages across the model, infrastructure, and application layers.
+        </p>
+        <div class="thesis-tags">
+          <span>Foundation Models</span>
+          <span>AI Agents</span>
+          <span>Vertical AI</span>
+          <span>Infrastructure</span>
+        </div>
+      </div>
+      <div class="thesis-card reveal" style="--d:0.24s;">
+        <div class="thesis-num">02 / Life</div>
+        <h3 class="thesis-name"><span class="it">Biohealthcare</span></h3>
+        <p class="thesis-desc">
+          A field where scientific rigor and the depth of intellectual property decide who wins. We walk with novel drug platforms, cell & gene therapies, and medical AI — from IP due diligence all the way to licensing and exit.
+        </p>
+        <div class="thesis-tags">
+          <span>Novel Drugs</span>
+          <span>Cell & Gene</span>
+          <span>Medical AI</span>
+          <span>Platforms</span>
+        </div>
+      </div>
+      <div class="thesis-card reveal" style="--d:0.08s;">
+        <div class="thesis-num">03 / Silicon</div>
+        <h3 class="thesis-name"><span class="it">Semiconductors</span></h3>
+        <p class="thesis-desc">
+          The real bottleneck of the AI era lives in silicon. Next-generation architectures, EDA, advanced process, AI accelerators — we concentrate capital on Korean semiconductor companies built to compete on the global stage.
+        </p>
+        <div class="thesis-tags">
+          <span>AI Accelerators</span>
+          <span>EDA</span>
+          <span>Advanced Process</span>
+          <span>Compound Semi</span>
+        </div>
+      </div>
+      <div class="thesis-card reveal" style="--d:0.16s;">
+        <div class="thesis-num">04 / Qubit</div>
+        <h3 class="thesis-name">Quantum <span class="it">Computing</span></h3>
+        <p class="thesis-desc">
+          The next computing paradigm is being written in quantum states. We back teams working on qubit architectures, error correction, quantum software stacks, and the hybrid systems that will bridge quantum to classical.
+        </p>
+        <div class="thesis-tags">
+          <span>Qubit Systems</span>
+          <span>Quantum SW</span>
+          <span>Cryogenics</span>
+          <span>QML</span>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="approach" id="approach">
+  <div class="container">
+    <div class="approach-head">
+      <div class="section-label reveal"><span class="num">05</span>Strategies</div>
+      <h2 class="reveal">
+        More than capital.<br>
+        <span class="it">A strategy.</span>
+      </h2>
+    </div>
+    <div class="approach-grid">
+      <div class="approach-card reveal">
+        <div>
+          <div class="approach-num">I.</div>
+          <h3 class="approach-title">Technology <span class="it">Insight</span></h3>
+          <p class="approach-desc">
+            Deep tech, not as a slogan. <strong>On-the-ground at NVIDIA GTC,</strong> reading every US big-tech earnings call, scanning the global research that maps where the frontier is moving — we find the companies one step ahead of the market. <strong>Patent-data analytics turn the future into a statistical problem.</strong>
+          </p>
+        </div>
+      </div>
+      <div class="approach-card reveal" style="--d:0.08s;">
+        <div>
+          <div class="approach-num">II.</div>
+          <h3 class="approach-title">IP-Driven <span class="it">Investing</span></h3>
+          <p class="approach-desc">
+            Great founders think about patents <em>before</em> they incorporate, and file them right after. We catch them at that decisive moment — through the eyes of patent attorneys <strong>Jongwoo Ryu and Daeho Lee.</strong> Post-investment, an <em>IP package</em> is custom-architected to build a moat no one can copy.
+          </p>
+        </div>
+      </div>
+      <div class="approach-card reveal" style="--d:0.16s;">
+        <div>
+          <div class="approach-num">III.</div>
+          <h3 class="approach-title">EIR &amp; Company <span class="it">Building</span></h3>
+          <p class="approach-desc">
+            Sometimes the right answer is not to find a company — it's to build one. Through our <strong>Entrepreneur-in-Residence program,</strong> we partner with proven operators to design companies from day zero. Hypothesis testing, founding-team assembly, seed capital, IP architecture — <em>every first button,</em> owned and operated by people who have done it before.
+          </p>
+        </div>
+      </div>
+      <div class="approach-card reveal" style="--d:0.24s;">
+        <div>
+          <div class="approach-num">IV.</div>
+          <h3 class="approach-title">Concentrated <span class="it">Conviction</span></h3>
+          <p class="approach-desc">
+            We honor the Buffett–Munger philosophy. Identify the rare company with an exceptional team and an unimitable moat — then back it relentlessly, <em>from Series A all the way to unicorn and decacorn.</em> Not diversification, but conviction. Not a quick exit, but a long walk.
+          </p>
+        </div>
+      </div>
+      <div class="approach-card approach-card--full reveal" style="--d:0.32s;">
+        <div>
+          <div class="approach-num">V.</div>
+          <h3 class="approach-title">The Most AI-Native <span class="it">VC</span></h3>
+          <p class="approach-desc">
+            Sourcing, diligence, documentation, portfolio monitoring — <strong>AI is embedded in every workflow.</strong> The first Korean VC built end-to-end on AI-native operations. Same hours, more companies seen. Same headcount, deeper diligence.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="portfolio-head">
+      <div>
+        <div class="section-label reveal"><span class="num">06</span>Portfolio</div>
+        <h2 class="reveal">
+          Port<span class="it">folio.</span>
+        </h2>
+      </div>
+      <div class="reveal" style="--d:0.15s;">
+        <p class="emphasis">
+          The firm is new. The judgment is <em>not.</em>
+        </p>
+        <p>
+          The first pages of H Ventures are being written, right now — one company at a time. Each investment tells you exactly what kind of capital we choose to be.
+        </p>
+      </div>
+    </div>
+
+    <div class="portfolio-feature reveal">
+      <div class="pf-meta">
+        <div class="pf-tag-row">
+          <span class="pf-tag">Bio Healthcare</span>
+          <span class="pf-tag">Medical Imaging</span>
+          <span class="pf-tag">SNUH Spin-off</span>
+        </div>
+        <div class="pf-roman">No. <em>01</em></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-left">
+          <div class="pf-logo">
+            <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" aria-label="Brightonix Imaging">
+              <defs>
+                <linearGradient id="bxgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#627eea"/>
+                  <stop offset="100%" stop-color="#9c87ff"/>
+                </linearGradient>
+              </defs>
+              <circle cx="22" cy="30" r="14" fill="none" stroke="url(#bxgrad)" stroke-width="2"/>
+              <circle cx="22" cy="30" r="5" fill="url(#bxgrad)"/>
+              <text x="48" y="28" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#eef0ff" letter-spacing="-0.02em">Brightonix</text>
+              <text x="48" y="46" font-family="Inter, sans-serif" font-size="13" font-weight="400" fill="#7878a8" letter-spacing="-0.01em">Imaging</text>
+            </svg>
+          </div>
+          <h3 class="pf-name">Brightonix <span class="it">Imaging</span></h3>
+          <div class="pf-tagline">
+            Korea's only manufacturer of <em>clinical PET systems</em> — <strong>seeing dementia and cancer earlier.</strong>
+          </div>
+        </div>
+
+        <div class="pf-right">
+          <p class="pf-lead">
+            A <strong>spin-off from Seoul National University Hospital's Functional & Molecular Systems Imaging Lab.</strong> Built on roughly 25 years of research (260+ papers, 40+ patents), Brightonix is the only Korean company developing, manufacturing, and selling clinical and preclinical molecular imaging equipment (PET).
+          </p>
+          <p class="pf-text">
+            Its flagship product, <em>PHAROS</em>, is the first domestically developed clinical PET system to receive medical-device manufacturing certification — and in August 2025, also received <strong>U.S. FDA 510(k) clearance.</strong> The same week, Brightonix became the first Korean medical device manufacturer to receive Digital Medical Device GMP certification. A next-generation small-animal PET/CT was unveiled to the global market the same year.
+          </p>
+          <p class="pf-text">
+            A company tackling one of the great medical challenges of an aging society — <em>dementia</em> — through a new standard of brain-dedicated PET. The company we have chosen to write our first page with.
+          </p>
+
+          <div class="pf-facts">
+            <div class="pf-fact">
+              <span class="pf-fact-k">Founded</span>
+              <span class="pf-fact-v">2016</span>
+            </div>
+            <div class="pf-fact">
+              <span class="pf-fact-k">HQ</span>
+              <span class="pf-fact-v">Seongdong-gu, Seoul</span>
+            </div>
+            <div class="pf-fact">
+              <span class="pf-fact-k">CEO</span>
+              <span class="pf-fact-v">Jae Sung Lee</span>
+            </div>
+            <div class="pf-fact">
+              <span class="pf-fact-k">Focus</span>
+              <span class="pf-fact-v">PET · Medical AI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-feature reveal">
+      <div class="pf-meta">
+        <div class="pf-tag-row">
+          <span class="pf-tag">Bio Healthcare</span>
+          <span class="pf-tag">Alzheimer's</span>
+          <span class="pf-tag">Therapeutics</span>
+        </div>
+        <div class="pf-roman">No. <em>02</em></div>
+      </div>
+
+      <div class="pf-body">
+        <div class="pf-left">
+          <div class="pf-logo">
+            <svg viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg" aria-label="Amyloid Solution">
+              <defs>
+                <linearGradient id="asgrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                  <stop offset="0%" stop-color="#e8845a"/>
+                  <stop offset="100%" stop-color="#b84a2e"/>
+                </linearGradient>
+              </defs>
+              <path d="M8,30 C8,18 18,18 22,30 C26,42 36,42 36,30" fill="none" stroke="url(#asgrad)" stroke-width="2.5" stroke-linecap="round"/>
+              <circle cx="8" cy="30" r="4.5" fill="url(#asgrad)"/>
+              <circle cx="36" cy="30" r="4.5" fill="url(#asgrad)"/>
+              <text x="52" y="28" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#fce8d8" letter-spacing="-0.02em">Amyloid</text>
+              <text x="52" y="46" font-family="Inter, sans-serif" font-size="13" font-weight="400" fill="#c49a87" letter-spacing="-0.01em">Solution</text>
+            </svg>
+          </div>
+          <h3 class="pf-name">Amyloid <span class="it">Solution</span></h3>
+          <div class="pf-tagline">
+            Erasing Alzheimer's disease — <strong>from the molecule up.</strong>
+          </div>
+        </div>
+
+        <div class="pf-right">
+          <p class="pf-lead">
+            A <strong>Pangyo-based biopharmaceutical company</strong> developing disease-modifying treatments for Alzheimer's patients across diverse disease stages. Founded in 2017, Amyloid Solution pursues a patient's biomarker-based approach — targeting not one mechanism, but the full biology of the disease: amyloid aggregation, neuroinflammation, and lipid metabolism.
+          </p>
+          <p class="pf-text">
+            Two clinical candidates are advancing toward US trials: an <em>Aβ disaggregator</em> — a first-in-class small molecule that breaks down amyloid β-aggregate — and an IgG4-based antibody targeting TLR2 to suppress neuroinflammation. The company has raised 32.5 billion KRW in total, with Yuhan Corp. participating as a strategic investor in the Series B.
+          </p>
+          <p class="pf-text">
+            Alzheimer's affects tens of millions globally with no widely available disease-modifying treatment. Amyloid Solution is building from first principles — addressing the biology, not just the symptoms. A mission we are proud to stand behind.
+          </p>
+
+          <div class="pf-facts">
+            <div class="pf-fact">
+              <span class="pf-fact-k">Founded</span>
+              <span class="pf-fact-v">2017</span>
+            </div>
+            <div class="pf-fact">
+              <span class="pf-fact-k">HQ</span>
+              <span class="pf-fact-v">Seongnam, Pangyo</span>
+            </div>
+            <div class="pf-fact">
+              <span class="pf-fact-k">CEO</span>
+              <span class="pf-fact-v">Jang Jin-tae</span>
+            </div>
+            <div class="pf-fact">
+              <span class="pf-fact-k">Focus</span>
+              <span class="pf-fact-v">Alzheimer's · Neuro-immunology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="portfolio-foot reveal" style="--d:0.1s;">
+      More to follow.
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <h2 class="reveal">
+    Let's <span class="it">build.</span>
+  </h2>
+  <p class="contact-desc reveal" style="--d:0.1s;">
+    If you're building — or dreaming of building — something that changes how the world works through technology, we want to hear from you.
+  </p>
+  <a href="mailto:info@hventures.co.kr" class="contact-cta reveal" style="--d:0.2s;">
+    Start the <em>conversation</em> <span class="arrow">→</span>
+  </a>
+
+  <div class="contact-details">
+    <div class="reveal">
+      <div class="label">Email</div>
+      <div class="val">info@hventures.co.kr</div>
+    </div>
+    <div class="reveal" style="--d:0.08s;">
+      <div class="label">Office</div>
+      <div class="val">
+        <a href="https://maps.google.com/?q=503+Teheran-ro+Gangnam-gu+Seoul+Korea" target="_blank" rel="noopener" style="color:inherit; text-decoration:underline; text-underline-offset:3px; text-decoration-color:rgba(255,255,255,0.3);">
+          503 Teheran-ro, 10F<br>Gangnam-gu, Seoul, Korea ↗
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="contact-map reveal" style="--d:0.2s;">
+    <iframe
+      src="https://maps.google.com/maps?q=503+Teheran-ro,+Gangnam-gu,+Seoul,+South+Korea&output=embed&z=15"
+      allowfullscreen
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="H Ventures Office Location">
+    </iframe>
+    <a href="https://maps.google.com/?q=503+Teheran-ro+Gangnam-gu+Seoul+Korea" target="_blank" rel="noopener" class="contact-map-link">
+      Open in Google Maps ↗
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-brand-lg">H Ventures</div>
+      <div class="footer-tag"><em>Patient capital, walking together.</em></div>
+    </div>
+    <div class="footer-col">
+      <h5>Focus</h5>
+      <ul>
+        <li>Artificial Intelligence</li>
+        <li>Semiconductors</li>
+        <li>Quantum Computing</li>
+        <li>Biohealthcare</li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Site</h5>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#founders">Team</a></li>
+        <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul>
+        <li>info@hventures.co.kr</li>
+        <li>503 Teheran-ro, 10F<br>Seoul, Korea</li>
+        <li><a href="ko.html">KOR →</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <div class="footer-copy">© 2026 H Ventures, LLC. All rights reserved.</div>
+    <div class="footer-fine">
+      <span>Est. 2026 · Seoul, Korea</span>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
