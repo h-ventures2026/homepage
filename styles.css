@@ -141,6 +141,7 @@ html[lang="ko"] .mobile-menu a{
     radial-gradient(ellipse 50% 50% at 50% 85%, rgba(98,126,234,0.1) 0%, transparent 60%),
     var(--paper);
 }
+.hero > *{max-width:1400px; width:100%; margin-left:auto; margin-right:auto;}
 .hero-top{
   display:flex; justify-content:space-between;
   align-items:flex-start; gap:20px; flex-wrap:wrap;
