@@ -35,11 +35,6 @@
     document.body.style.overflow = '';
   }
 
-  // Remember manual language choice so auto-redirect doesn't override it
-  document.querySelectorAll('.lang-toggle').forEach(link => {
-    link.addEventListener('click', () => sessionStorage.setItem('lang-choice', 'manual'));
-  });
-
   menuBtn.addEventListener('click', toggleMenu);
 
   mobileMenu.querySelectorAll('a').forEach(link => {
